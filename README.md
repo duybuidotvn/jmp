@@ -1,5 +1,5 @@
-# jmp
-Job Matching Portal-Presentation
+# Job Matching Portal-Presentation
+
 Author: Duy T. Bui / Long P. Vu
 email: duybuivn@gmail.com / longvu88@gmail.com
 Recruitment Methodology enables us to fully analyze each client‟s business requirements and target quality candidates that match the specific criteria. Within the next 5 years, JMS will become one of the most popular recruitment sites with:
