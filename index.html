@@ -1,1 +1,591 @@
-"Presentation" 
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Proposal for Job Portal Development</title>
+
+		<meta name="description" content="Job Portal + Matching System + Recommnder System">
+		<meta name="author" content="Duy T. Bui">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <style>
+        .reveal table tbody th{
+            font-weight: bold;
+        }
+        .reveal table tbody th h4{
+            font-weight: normal;
+        }
+        .reveal .blue{
+            color: #00aff0; /* rgba(0, 0, 255, 0.7); */
+        }
+        .reveal .red{
+            color: rgba(240, 67, 0, 1.0);
+        }
+        .reveal .blue-bg{
+            padding-right: 10px;
+            padding-left: 10px;
+            font-size: 80%;
+            color: white;
+            text-align: right;
+            background: #00aff0;  /* rgba(0, 0, 255, 0.7); */
+        }
+        .reveal .red-bg{
+            padding-right: 10px;
+            padding-left: 10px;
+            font-size: 80%;
+            color: white;
+            text-align: right;
+            background: rgba(240, 67, 0, 1.0);
+        }
+        .reveal .benchmark h3{
+            text-transform: none;
+        }
+        .reveal .benchmark table thead{
+            padding-bottom: 50px;
+        }
+        .reveal .quote{
+            line-height: 5em;
+        }
+        .reveal code{
+            font-size: 80%;
+        }
+        .reveal section img{
+            border: 0px;
+            box-shadow: none;
+            vertical-align: middle;
+        }
+
+        .reveal .archbox{
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 70%;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            background: rgba(0, 0, 0, 0.05);
+            line-height: 1.8em;
+        }
+
+        .reveal .architecture{
+            line-height: 1em;
+        }
+
+        .reveal .highlight{
+            background: rgba(0, 175, 240, 0.4);
+        }
+
+        .reveal a{
+            font-size: 60%;
+        }
+
+        .reveal iframe {
+            overflow: hidden;
+            scrolling: no;
+            max-width: 200%;
+            max-height: 200%;
+        }
+
+        .section .framediv{
+            top: 0px;
+            width: 600px;
+            height: 600px;
+        }
+
+        .logoroll{
+            top: -300px;
+            right: 300px;
+        }
+
+        .reveal .title-slide{
+            text-align: left;
+        }
+
+        </style>
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+<!--main-->
+<section data-transition="cube" data-background-position="90% 0%" data-background="img/jobmatching-logo.png" data-background-size="250px" class="title-slide" >
+<br>
+<br>
+<h1>PROPOSAL FOR JOB PORTAL DEVELOPMENT</h1>
+<br>
+<br>
+<h4 class="red">
+Faculty of informatics
+</h4>
+<h3 class="blue">
+Pham Van Dong University
+</h3>
+
+</section>
+<!--1-->
+<section data-transition="fade">
+<h2>What is job matching portal?</h2>
+<h4 class="fragment blue">Job Portal <span class="red">+</span> Recommender System <span class="red">+</span> Matching System</h4>
+</section>
+<!--2-->
+<section>
+<!--2.1-->
+ <section data-transition="linear">
+<h1>7C Frameworks</h1>
+</section> 
+<!--2.2-->
+<section data-transition="fade">
+<h3>Bens Paradamean-2008</h3>
+<div class="fragment">
+<h5 class="blue">Context.</h5>
+<h5 class="blue">Content.</h5>
+<h5 class="blue">Community.</h5>
+<h5 class="red">Customization.</h5>
+<h5 class="red">Communication.</h5>
+<h5 class="red">Connection.</h5>
+<h5 class="blue"> Commerce.</h5>
+<div>
+<h3 class="fragment">Sudiana & Ben Parademean-01/2014</h3>
+</section>
+</section>
+ <!--3-->
+<section data-background="img/liferay-logo.png" data-background-position="90% 0%" data-background-size="300px" class="title-slide">
+<h2>Liferay Enterprise Framework</h2>
+<div class="fragment">
+<h1 class="red">10</h1>
+<h3 class="blue">Why use liferay portal for JMP</h3>
+</div>
+</section> 
+ <!--4-->
+<section>
+ <!--4.1-->
+<section data-transition="linear">
+<h1>Recommender System</h1>
+<small>"Recommender engines (REs) also known as recommender systems are software tools and techniques providing suggestions to a user. The suggestions provided are aimed at supporting their users in various decision making processes such as what items to buy, what music to listen, what profiles to browse, or what news to read"  " <span class="blue">Recommender Systems Handbook - 2011</span></small> 
+<small class="red">Francesco  Ricci, Lior Rokach, Bracha Shapira, Paul B. Kantor</small> 
+<br> <br>
+<h5 class="fragment blue">Collaborative filtering</h5>
+<h5 class="fragment blue">Content-based filtering</h5>
+</section>
+<!--4.2-->
+<section data-transition="cube" data-background-position="100% 0%" data-background="img/mahout-logo.png" data-background-size="250px" class="title-slide">
+<h3>The flow of information in <span class="blue">Recommender system</span></h3>
+<img width="800px" src="img/flow-info-REs.png"/>
+</section>
+</section>
+<!--5-->
+<section>
+<!--5.1-->
+ <section data-transition="linear">
+<h1>Matching System</h1>
+</section>
+<section>
+<h3>Problem???</h3>
+<img width="500px" src="img/searching-ex.png"/>
+</section>
+<!--5.2-->
+<section>
+<h3>Steaming process</h3>
+<img width="470px" src="img/steaming-process.png"/>
+</section>
+</section>
+<!--6-->
+<section>
+<!--6.1-->
+ <section data-transition="linear">
+<h1>Dynamic Database</h1>
+<h3 class="fragment blue">In Content<span class="red">+</span> In Schema<span class="red">+</span>In Query</h3>
+</section>
+ <!--6.2-->
+<section>
+<h3>Diagram of Dynamic database management</h3>
+<img width="800px" src="img/block-dynamic.png"/>
+</section>
+<!--6.3-->
+<section>
+<h3>Structure of Dynamic database management system</h3>
+<img width="800px" src="img/structure-dynamic.png"/>
+</section>
+ <!--6.4-->
+<section>
+<div>
+    <h2>Examples</h2>
+    <pre><code data-trim contenteditable>
+* Meta-Table
+tableID    |  TableName                                                                                      
+--------------------------------------
+1          |  LearningOpportunity                                                         
+2          |  JobVacancy                                                                         
+3          |  LWCArticle                                                                           
+4          |  author                                                                         
+5          |  LFMArticle                                                       
+6          |  LearningInstitution                                                                 
+7          |  Job                                                                            
+8          |  Language                                                        
+9          |  Skill
+10         |  Tag                                                                                      
+
+* Meta-Column    
+ColID |  ColName              |   TableID                                                                            
+------------------------------------------------------
+1     |  JobID                |    7                                        
+2     |  JobTitle             |    7                                                               
+3     |  JobDescription       |    7                                                               
+4     |  LanguageID           |    8                                                           
+5     |  Language_Name        |    8                                                                                
+
+* Meta-Row
+RowID    |  RowType     |   ColID    | TableID  |  Row Content    
+---------|--------------|------------|--------------------------------------
+1        |  Varchar     |   2        | 7        |  Java Developer 
+2        |  Varchar     |   2        | 7        |  Software Engineer
+3        |  Varchar     |   5        | 8        |  Khmer 
+
+*Meta-document
+DocumentID  |  Documents Content                  |  FieldID
+--------------------------------------------------------
+1           |  Java Developer at CSC Vietnam      |  1
+2           |  Software Engineer in 3 year        |  2 
+3           |  Software Engineer and speak Khmer  |  23
+
+*Meta-store
+DocunementID |   ColID  | TableID  |  FieldID                                                                    
+-------------------------------------------------------                                                                   
+1            |   2      |   2      |  1                                                             
+2            |   2      |   2      |  2                                        
+3            |   25     |   24     |  23
+
+*Folder    
+FolderID |  FolderName                                                                                              
+_____________________                                                                  
+7        |  Job                                                                                 
+8        |  Skill                                                            
+9        |  Language
+
+    </code></pre>
+</div>
+</section>
+</section>
+<!--7-->
+<section>
+<!--7.1-->
+ <section data-transition="linear">
+<h1>Advanced Search</h1>
+<h3 class="fragment blue">IR<span class="red">+</span>Full-text search<span class="red">+</span>Boolean Search</h3>
+</section>
+<section data-transition="cube" data-background-position="100% 0%" data-background="img/mysql-logo.png" data-background-size="200px" class="title-slide">
+<div>
+    <h6>Query creating a document</h6>
+    <pre><code data-trim contenteditable>
+CREATE TABLE `document` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`title` varchar(200) DEFAULT NULL,
+`body` text,
+PRIMARY KEY (`id`),
+FULLTEXT KEY `title` (`title`,`body`)
+) ENGINE=MyISAM;
+    </code></pre>
+</div>
+<div>
+    <h6>Query inserting document</h6>
+    <pre><code data-trim contenteditable>
+INSERT INTO `document` VALUES 
+(1,'Database Admin','using MySQL query to manage System ...'),
+(2,'Experience Database','Five years experience in  ...'),
+(3,'Description','I am admin of CSC Vietnam ...'),
+(4,'Language','1. Mother tongue: Vietnamese, 2. Frequency in English ...'),
+(5,'Database Tools','using MySQL Workbench, MySQL GUI Tools ...'),
+(6,'Database Security','When configured properly, Database ...');
+;
+    </code></pre>   
+</div>
+</section>
+<!--7.2-->
+<section data-transition="cube" data-background-position="100% 0%" data-background="img/mysql-logo.png" data-background-size="200px" class="title-slide">
+<div>
+    <h6 class="red">Tables</h6>
+    <pre><code data-trim contenteditable>
++----+--------------------+----------------------------------------------------------+
+| id | title              | body                                                     |
++----+--------------------+----------------------------------------------------------+
+|  1 | Database Admin     | using MySQL query to manage System ...                   |
+|  2 | Experience Database| Five years experience in  ...                            |
+|  3 | Description        | I am  admin of CSC Vietnam ...                           |
+|  4 | Language           | 1. Mother tongue: Vietnamese, 2. Frequency in English ...|
+|  5 | Database Tools     | using MySQL Workbench, MySQL GUI Tools ...               |
+|  6 | Database Security  | uWhen configured properly, Database ...                  |
++----+--------------------+----------------------------------------------------------+
+    </code></pre>   
+</div>
+<div>
+    <h6>Searching "MySQL"</h6>
+    <pre><code data-trim contenteditable class="fragment">
+mysql> select * from document WHERE MATCH(title,body) AGAINST ('MySQL');
+
++----+--------------------+-------------------------------------------------+
+| id | title              | body                                            |
++----+--------------------+-------------------------------------------------+
+|  5 | Database Tools     | using MySQL Workbench, MySQL GUI Tools ...      |
+|  1 | Database Admin     | using MySQL query to manage System ...'         |
++----+--------------------+-------------------------------------------------+
+2 rows in set (0.01 sec)
+    </code></pre>   
+</div>
+</section>
+<!--7.3-->
+<section data-transition="cube" data-background-position="100% 0%" data-background="img/mysql-logo.png" data-background-size="200px" class="title-slide">
+<div>
+    <h6 class="red">Tables</h6>
+    <pre><code data-trim contenteditable>
++----+--------------------+----------------------------------------------------------+
+| id | title              | body                                                     |
++----+--------------------+----------------------------------------------------------+
+|  1 | Database Admin     | using MySQL query to manage System ...                   |
+|  2 | Experience Database| Five years experience in  ...                            |
+|  3 | Description        | I am  admin of CSC Vietnam ...                           |
+|  4 | Language           | 1. Mother tongue: Vietnamese, 2. Frequency in English ...|
+|  5 | Database Tools     | using MySQL Workbench, MySQL GUI Tools ...               |
+|  6 | Database Security  | uWhen configured properly, Database ...                  |
++----+--------------------+----------------------------------------------------------+
+    </code></pre>   
+</div>
+<div>
+    <h6>Searching "MySQL admin"</h6>
+    <pre><code data-trim contenteditable class="fragment">
+mysql> select * from document WHERE MATCH(title,body) AGAINST ('MySQL admin');
+
++----+--------------------+-------------------------------------------------+
+| id | title              | body                                            |
++----+--------------------+-------------------------------------------------+
+|  1 | Database Admin     | using MySQL query to manage System ...'         |
+|  5 | Database Tools     | using MySQL Workbench, MySQL GUI Tools ...      |
+|  3 | Description        | I am  admin of CSC Vietnam ...                  |
++----+--------------------+-------------------------------------------------+
+2 rows in set (0.01 sec)
+    </code></pre>   
+</div>
+</section >
+<!--7.4-->
+<section data-transition="cube" data-background-position="100% 0%" data-background="img/boolean-search.png" data-background-size="200px" class="title-slide">
+<div>
+    <h6>Natural Query Language</h6>
+    <pre><code data-trim contenteditable>
+mysql> select * from articles WHERE MATCH(title,body) AGAINST ('database');
+Empty set (0.00 sec)
+    </code></pre>   
+</div>
+<div>
+    <h6>OR</h6>
+    <pre><code data-trim contenteditable>
+mysql> select * from articles WHERE MATCH(title,body) AGAINST ('database' IN BOOLEAN MODE);
++----+--------------------+----------------------------------------------------------+
+| id | title              | body                                                     |
++----+--------------------+----------------------------------------------------------+
+|  1 | Database Admin     | using MySQL query to manage System ...                   |
+|  2 | Experience Database| Five years experience in  ...                            |
+|  5 | Database Tools     | using MySQL Workbench, MySQL GUI Tools ...               |
+|  6 | Database Security  | When configured properly, Database ...                   |
++----+--------------------+----------------------------------------------------------+
+6 rows in set (0.00 sec)
+    </code></pre>   
+</div>
+<div>
+    <h6>AND/NOT</h6>
+    <pre><code data-trim contenteditable>
+mysql> select * from articles WHERE MATCH(title,body) AGAINST ('+database -admin' IN BOOLEAN MODE);
++----+---------------------+------------------------------------------+
+| id | title               | body                                     |
++----+---------------------+------------------------------------------+
+|  2 | Experience Database | Five years experience in  ...            |
+|  5 | Database Tools      | using MySQL Workbench, MySQL GUI Tools...|  
+|  6 | Database Security   | uWhen configured properly, Database ...  |                |
++----+---------------------+------------------------------------------+
+1 row in set (0.01 sec)
+    </code></pre>   
+</div>
+</section>
+</section>
+<!--8-->
+<section>
+<!--8.1-->
+<section>
+<h1>Some designs for <span class="blue">JMP</span></h1>
+</section>
+<!--8.2-->
+<section>
+<h3>Class Diagram-1</h3>
+<img width="800px" src="img/class-1.png"/>
+</section>
+<!--8.3-->
+<section>
+<h3>Class Diagram-2</h3>
+<img width="1200px" src="img/class-2.png"/>
+</section>
+<!--8.4-->
+<section>
+<h3>Class Diagram-3</h3>
+<img width="1200px" src="img/class-3.png"/>
+</section>
+<!--8.5-->
+<section>
+<h3>User Interface-1</h3>
+<img width="800px" src="img/demo-1.png"/>
+</section>
+<!--8.6-->
+<section>
+<h3>User Interface-2</h3>
+<img width="800px" src="img/demo-2.png"/>
+</section>
+<!--8.7-->
+<section>
+<h3>User Interface-3</h3>
+<img width="800px" src="img/demo-3.png"/>
+</section>
+<!--
+<section>
+<div>
+    <h3>Recommendation Class</h3>
+    <pre><code data-trim contenteditable>
+import java.io.File; 
+import java.io.IOException; 
+import java.util.ArrayList; 
+import java.util.List; 
+import org.apache.mahout.cf.taste.common.TasteException; 
+import org.apache.mahout.cf.taste.common.Weighting; 
+import org.apache.mahout.cf.taste.impl.model.file.FileDataModel; 
+import org.apache.mahout.cf.taste.impl.recommender.CachingRecommender; 
+import org.apache.mahout.cf.taste.impl.recommender.GenericItemBasedRecommender; 
+import org.apache.mahout.cf.taste.impl.similarity.PearsonCorrelationSimilarity; 
+import org.apache.mahout.cf.taste.model.DataModel; 
+import org.apache.mahout.cf.taste.recommender.RecommendedItem; 
+import org.apache.mahout.cf.taste.similarity.ItemSimilarity; 
+import com.globalworldlabor.services.recommender.dos.FileDataModelBuilder; 
+ 
+public class Recommendations { 
+   
+  … 
+ 
+    FileDataModelBuilder fbuild = new FileDataModelBuilder(); 
+ 
+    String filepath = System.getProperty("user.dir");  
+ 
+               String filename = filepath+File.separator+"flixster_recommendations.csv"; 
+ 
+    String recfilename = filepath+File.separator+"recommendations.txt"; 
+ 
+    List<RecommendedItem> reclist = new ArrayList<RecommendedItem>(); 
+ 
+    long userid = userId; 
+               int numberOfRecs = count; 
+ 
+    try { 
+       
+        File inputfile = new File(filename); 
+          
+          
+      DataModel model = new FileDataModel(inputfile); 
+       
+  PearsonCorrelationSimilarity similarity = new PearsonCorrelationSimilarity(model); 
+     
+  CachingRecommender recommender = new CachingRecommender(new GenericItemBasedRecommender(model
+(ItemSimilarity) similarity)); 
+       
+      reclist = recommender.recommend(userid,numberOfRecs ); 
+       
+    } catch (IOException e1) { 
+      // TODO Auto-generated catch block 
+      e1.printStackTrace(); 
+    } catch (TasteException e) { 
+      // TODO Auto-generated catch block 
+      e.printStackTrace(); 
+    } 
+    try { 
+ 
+        for(RecommendedItem it:reclist) 
+        { 
+           
+          long  itemid = it.getItemID(); 
+          float value = it.getValue();     
+                fbuild.writeToFile(userid, itemid, value, recfilename); 
+        } …
+
+    </code></pre>   
+</div>
+</section>
+-->
+</section>
+<!--9.0-->
+<section>
+<h1 class="blue">Thank you for attention</h1>
+<h2 class="red">Q&A</h2>
+</section>
+
+            </div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+            Reveal.addEventListener("slidechanged", function(ev){
+                var slide = Reveal.getCurrentSlide();
+                var framesrc = slide.getAttribute("data-iframe");
+                if (framesrc){
+                    var all = window.document.getElementsByClassName("framediv");
+                    for (i = 0; i < all.length; i++)
+                        all[i].innerHTML = "<iframe width='600' height='600' src=''></iframe>";
+                    html = "<iframe scrolling='no' width='600' height='600' src='" +
+                            framesrc + "'></iframe>";
+                    slide.getElementsByClassName("framediv")[0].innerHTML = html;
+                }
+            });
+
+		</script>
+
+	</body>
+</html>
