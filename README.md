@@ -7,4 +7,5 @@ Recruitment Methodology enables us to fully analyze each client‟s business req
  -	Reliable and professional staffs.
  -	Intelligent search and matching technology saves you the hassle of searching through thousands of jobs, bringing you and recruiters together quickly and easily.
  -	Links with foreign companies to help high skill labors have chance to work oversea.
+ 
 ![alt tag](https://github.com/duybuivn/jmp/blob/gh-pages/img/jobmatching-logo.png)
